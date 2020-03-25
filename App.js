@@ -19,6 +19,8 @@ import { KoroForm } from './components/Form';
 import { KoroPopover } from './components/Popover';
 import { KoroTable } from './components/Table';
 
+export {KoroButton}
+
 export default function App() {
   const [disabled, setDisabled] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
