@@ -1,5 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "name": "react-native-koro-lib",
+  "version": "0.0.1",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -7,6 +9,11 @@
     "web": "expo start --web",
     "eject": "expo eject"
   },
+  "repository": {
+    "url": "https://github.com/Wisammozalbat/react-native-koro-lib"
+  },
+  "author": "Wisam Mozalbat and Paolo Lodato",
+  "license": "MIT",
   "dependencies": {
     "expo": "~36.0.0",
     "react": "~16.9.0",
@@ -17,6 +24,5 @@
   "devDependencies": {
     "babel-preset-expo": "~8.0.0",
     "@babel/core": "^7.0.0"
-  },
-  "private": true
+  }
 }
