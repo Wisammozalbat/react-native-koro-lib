@@ -19,8 +19,6 @@ import { KoroForm } from './components/Form';
 import { KoroPopover } from './components/Popover';
 import { KoroTable } from './components/Table';
 
-export {KoroButton}
-
 export default function App() {
   const [disabled, setDisabled] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
@@ -71,7 +69,7 @@ export default function App() {
         <View style={styles.container}>
           <Text>Open up App.js to start working on your app!</Text>
           <KoroButton title="Open Modal" onPress={()=> setModalOpen(true)} style={{width: 300}}/>
-          <KoroIcon icon="downArrow"/>
+          <View style={{backgroundColor: 'grey'}}><KoroIcon icon="checkWhite"/></View>
           <KoroModal visible={modalOpen} borderStyle={{padding: 20}} onRequestClose={()=> setModalOpen(false)}>
             <KoroToast />
             <KoroButton 
@@ -123,7 +121,9 @@ export default function App() {
             </Text>
           </KoroCard>
           <KoroSteps 
-            steps={['im step number 1', 'im step number 2', 'im step number 3', 'im step number 4']}
+            steps={['im step number 1', 'im step number 2', 'im step number 3', 'im step number 4', 'im step number 5']}
+            type='circles'
+            onDone={() => Alert.alert('Done steps')}
           />
           <KoroButton title='Try toast' onPress={tryToast}/>
       </View>
@@ -161,3 +161,4 @@ const styles = StyleSheet.create({
     paddingTop      : 30
   }
 });
+
